@@ -27,4 +27,10 @@ const blocks = extractRawBlocks({
 
 本库从 MIT 许可的 dsh-better-session-query 抽离，继续使用 MIT。查询插件保留 `/blocks` 兼容转发；新消费者直接依赖本包。
 
-当前为待发布的 0.1.0 源码；公开 npm 发布完成前，使用 `pnpm pack` 生成的 tarball 安装。消费者声明标准版本依赖，不能将本地准备包的验证当作公开注册表安装已经可用。
+0.1.0 已发布到 npm，消费者可直接安装：
+
+```sh
+pnpm add @leolee9086/dsh-session-blocks@0.1.0
+```
+
+查询与照料插件已通过普通 pnpm 安装消费此版本。
