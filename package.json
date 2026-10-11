@@ -1,0 +1,22 @@
+{
+  "name": "@leolee9086/dsh-session-blocks",
+  "version": "0.1.0",
+  "description": "Independent pure functions for session block identities, traversal and lossless extraction",
+  "author": "leolee9086",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check lib/index.js",
+    "prepack": "pnpm check && pnpm test"
+  },
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public" },
+  "dependencies": {}
+}
